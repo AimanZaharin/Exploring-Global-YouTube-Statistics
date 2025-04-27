@@ -17,7 +17,7 @@ The primary goal of this analysis is to harness historical data, such as the num
 ### **Descriptive Analysis:** 📚  
 Descriptive analytics focuses on understanding past performance and providing context to current situations. It helps in understanding the basic features of the data and deriving initial insights.
 
-### **Exploratory Analysis:** 🌟  
+### **Exploratory Analysis:**   
 This approach delves deeper into the dataset to uncover relationships, trends, and anomalies. It involves using graphical and statistical techniques to explore patterns and potential correlations between different variables.
 
 ### **Prescriptive Analysis:** 💡  
@@ -30,7 +30,7 @@ Predictive analytics uses statistical models and machine learning algorithms to 
 
 ## **Analysis Questions:** 🧠
 
-### **Descriptive Analysis:**
+### **Descriptive Analysis:** 📚
 
 #### Question 1:  
 **How does the total number of subscribers correlate with the total video views across all videos on the channel?**  
@@ -42,7 +42,7 @@ Predictive analytics uses statistical models and machine learning algorithms to 
 
 ---
 
-### **Exploratory Analysis:**  
+### **Exploratory Analysis:** 🌟
 
 #### Question 3:  
 **How do the estimated highest yearly earnings compare across different categories of YouTube channels?**  
@@ -80,7 +80,7 @@ Predictive analytics uses statistical models and machine learning algorithms to 
 
 ## **Data Collection:** 📝
 
-The dataset used for this study is from the Kaggle repository, specifically the **Global YouTube Statistics 2023 dataset**. This dataset provides comprehensive insights into various metrics and attributes of YouTube channels worldwide, which are crucial for analyzing trends and patterns in online content consumption.
+The dataset used for this study is from the Kaggle repository, specifically the **[Global YouTube Statistics 2023 dataset](https://www.kaggle.com/datasets/nelgiriyewithana/global-youtube-statistics-2023)**. This dataset provides comprehensive insights into various metrics and attributes of YouTube channels worldwide, which are crucial for analyzing trends and patterns in online content consumption.
 
 ---
 
