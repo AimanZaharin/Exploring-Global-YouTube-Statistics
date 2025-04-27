@@ -1,60 +1,99 @@
-# YouTube Channel Prediction
+# **Exploring Global YouTube Statistics**
 
-This project aims to predict various metrics related to YouTube channels, including subscriber growth and total video views. The dataset used is from the [Kaggle Global YouTube Statistics 2023](https://www.kaggle.com/datasets) repository. The project involves the application of different machine learning techniques, including linear regression and random forest, to predict YouTube channel metrics.
+**Email**: noraimanzaharinnoorazwan11@gmail.com
 
-## **Project Overview**
+## **Business Case: Analysis of Different YouTube Channel Aspects**
 
-The primary goal of this project is to explore relationships between various metrics of YouTube channels, such as video views, uploads, subscribers, and channel categories. Based on this exploration, predictions are made for future growth in subscribers and video views.
+### **Introduction:**
+YouTube has become a cornerstone for content creation and distribution, revolutionizing the way we engage with media. With over 2 billion logged-in monthly users, the platform provides an unparalleled opportunity for creators, businesses, and consumers alike. It is not just a place for entertainment, but a powerful tool for building communities, driving trends, and generating revenue. In this personal project, I delve into various aspects of YouTube channels to uncover actionable insights that can help improve channel performance and guide future growth strategies.
 
-The dataset used contains data on YouTube channels, including metrics such as:
-- Total video views
-- Total subscribers
-- Number of uploads
-- Channel categories
-- Country
-- Year the channel was created
+### **Objective:**
+The primary goal of this analysis is to harness historical data, such as the number of uploads, total video views, subscriber count, and channel categories, to examine different facets of YouTube channels. By employing a variety of analytical techniques, I aim to uncover hidden patterns and relationships that can offer valuable predictions about a channel's future trajectory. Ultimately, this project seeks to provide a data-driven approach to understanding and forecasting YouTube channel growth.
 
-## **Types of Analysis**
+## **Types of Analysis Used:**
 
-1. **Descriptive Analysis:**
-   - Understanding past performance and providing context to current trends.
-   - Examples: Correlation between total video views and subscribers, relationship between the creation year of a YouTube channel and its total subscribers.
+### **Descriptive Analysis:**
+Descriptive analytics focuses on understanding past performance and providing context to current situations. It helps in understanding the basic features of the data and deriving initial insights.
 
-2. **Exploratory Analysis:**
-   - Delving deeper into the dataset to uncover relationships and trends.
-   - Examples: Highest yearly earnings across different categories, relation between total views in the last 30 days and new subscribers gained.
+### **Exploratory Analysis:**
+This approach delves deeper into the dataset to uncover relationships, trends, and anomalies. It involves using graphical and statistical techniques to explore patterns and potential correlations between different variables.
 
-3. **Prescriptive Analysis:**
-   - Recommending strategies based on the insights derived from the analysis.
-   - Example: Targeting content to maximize engagement based on channel category and country population.
+### **Prescriptive Analysis:**
+This analytical approach focuses on recommending actions or strategies based on the insights derived from the data. It aims to provide actionable recommendations for a specific situation based on the data derived from the analysis.
 
-4. **Predictive Analysis:**
-   - Using statistical models and machine learning to predict future outcomes.
-   - Examples: Predicting future growth in subscribers and video views based on historical data.
+### **Predictive Analysis:**
+Predictive analytics uses statistical models and machine learning algorithms to identify trends and patterns that suggest future outcomes.
 
-## **Machine Learning Algorithms Used**
+---
 
-1. **Linear Regression:**
-   - A simple regression technique to model the relationship between input features and the target variable.
-   - Used to predict subscriber growth based on the number of uploads and video views.
+## **Analysis Questions:**
 
-2. **Random Forest Regressor:**
-   - A regression algorithm that uses an ensemble of decision trees to make predictions. It helps in reducing overfitting and improving prediction accuracy.
+### **Descriptive Analysis:**
 
-## **Key Questions Analyzed**
+#### Question 1:
+**How does the total number of subscribers correlate with the total video views across all videos on the channel?**
 
-### **Descriptive Analysis**
-1. How does the total number of subscribers correlate with the total video views across all videos on the channel?
-2. What is the relationship between the year a YouTube channel was created and its total number of subscribers?
+- **Features Used**: Subscribers, Video Views
 
-### **Exploratory Analysis**
-1. How do the estimated highest yearly earnings compare across different categories of YouTube channels?
-2. How do the total video views in the last 30 days relate to the number of new subscribers gained in the last 30 days for different YouTube channel types?
+#### Question 2:
+**What is the relationship between the year a YouTube channel was created and its total number of subscribers?**
 
-### **Prescriptive Analysis**
-1. Based on the category of the YouTube channel, its total number of uploads, and the country's population, how can channels strategically target content to maximize engagement and subscriber growth?
+- **Features Used**: Subscribers, Created Year
 
-### **Predictive Analysis**
-1. Can we predict the future growth in subscribers for a YouTube channel based on the historical number of uploads, and total video views?
-2. Based on the total number of subscribers, uploads, video views, and the category of the channel, can we predict which feature influences highest yearly earnings the most?
-3. Can we predict the future growth in total video views for a YouTube channel based on its current number of subscribers, category, and uploads?
+---
+
+### **Exploratory Analysis:**
+
+#### Question 3:
+**How do the estimated highest yearly earnings compare across different categories of YouTube channels?**
+
+- **Features Used**: Highest Yearly Earnings, Category
+
+#### Question 4:
+**How do the total video views in the last 30 days relate to the number of new subscribers gained in the last 30 days for different YouTube channel types?**
+
+- **Features Used**: Video Views (Last 30 Days), Subscribers (Last 30 Days), Channel Type
+
+---
+
+### **Prescriptive Analysis:**
+
+#### Question 5:
+**Based on the category of the YouTube channel, its total number of uploads, and the country's population, how can channels strategically target content to maximize engagement and subscriber growth?**
+
+- **Features Used**: Category, Uploads, Population, Subscribers
+
+---
+
+### **Predictive Analysis:**
+
+#### Question 6:
+**Can we predict the future growth in subscribers for a YouTube channel based on its historical number of uploads, and total video views?**
+
+- **Features Used**: Uploads, Video Views, Subscribers
+
+#### Question 7:
+**Based on the total number of subscribers, uploads, video views, and the category of the channel, can we predict which feature influences highest yearly earnings the most?**
+
+- **Features Used**: Subscribers, Category, Uploads, Video Views, Highest Yearly Earnings
+
+#### Question 8:
+**Can we predict the future growth in total video views for a YouTube channel based on its current number of subscribers, category, and uploads?**
+
+- **Features Used**: Video Views, Uploads, Category, Subscribers
+
+---
+
+## **Data Collection:**
+
+The dataset used for this study is from the Kaggle repository, specifically the Global YouTube Statistics 2023 dataset. This dataset provides comprehensive insights into various metrics and attributes of YouTube channels worldwide, which are crucial for analyzing trends and patterns in online content consumption.
+
+---
+
+## **Machine Learning Algorithms Used:**
+
+### **1. Linear Regression:**
+Linear regression is a straightforward and effective machine learning algorithm used to predict continuous target variables. It models the relationship between the target variable and one or more independent variables by fitting a linear equation to observed data. The algorithm finds the best-fitting line by minimizing the sum of squared differences between predicted and observed values (least squares method).
+
+### **2. Random Forest Regressor:**
+Random Forest Regressor is a regression algorithm that improves accuracy and reduces overfitting by combining predictions from multiple decision trees. During training, it creates many trees, each using a random subset of data and features. Each tree predicts an outcome, and the final prediction is the average of these outcomes. This method reduces overfitting and variance, resulting in more precise and reliable predictions.
